@@ -1,14 +1,21 @@
 .content {
   width: 480px;
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
+
+.rounded-corners, .opponent-weapon-image-wrapper, .weapon-image-wrapper {
+  border-radius: 25px; }
 
 .opponent-weapon-image-wrapper {
   width: 128px;
   margin: 0 auto 20px auto; }
 
+.opponent-weapon-image {
+  width: 128px;
+  height: 128px; }
+
 .weapon-image-wrapper {
-  border-radius: 25px;
   width: 140px;
   height: 140px;
   margin-right: 10px;
@@ -16,7 +23,7 @@
   float: left; }
 
 .weapon-image-wrapper:hover {
-  background-color: #00ff00; }
+  background-color: #0000ff; }
 
 .weapon-image {
   margin: 6px 0 0 6px;

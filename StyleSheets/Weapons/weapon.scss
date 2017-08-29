@@ -1,10 +1,20 @@
+.rounded-corners{
+    border-radius: 25px;
+}
+
 .opponent-weapon-image-wrapper{
+  @extend .rounded-corners;
   width: 128px;
   margin: 0 auto 20px auto;
 }
 
+.opponent-weapon-image{
+  width: 128px;
+  height: 128px;
+}
+
 .weapon-image-wrapper{
-  border-radius: 25px;
+  @extend .rounded-corners;
   width: 140px;
   height: 140px;
   margin-right: 10px;
@@ -13,7 +23,7 @@
 }
 
 .weapon-image-wrapper:hover {
-  background-color: #00ff00;
+  background-color: #0000ff;
 }
 
 .weapon-image{

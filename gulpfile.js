@@ -24,7 +24,9 @@ gulp.task('scripts', function() {
         .pipe(concat('rockPaperScissors.js'))
         .pipe(gulp.dest(destination))
         .pipe(rename('rockPaperScissors.min.js'))
-        .pipe(uglify())
+        .pipe(uglify().on('error', function(error) {
+          console.log(error);
+        }))
         .pipe(gulp.dest(destination));
 });
 
