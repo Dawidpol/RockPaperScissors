@@ -14,18 +14,22 @@ var rename = require('gulp-rename');
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('StyleSheets/*.scss')
+        .pipe(concat('rockPaperScissors.css'))
         .pipe(sass())
-        .pipe(gulp.dest('rockPaperScissors.css'));
+        .pipe(rename('rockPaperScissors.css'))
+        .pipe(gulp.dest(''));
 });
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
+    var destination = '';
+
     return gulp.src('Scripts/*.js')
-        .pipe(concat('all.js'))
-        .pipe(gulp.dest('rockPaperScissors.js'))
+        .pipe(concat('rockPaperScissors.js'))
+        .pipe(gulp.dest(destination))
         .pipe(rename('rockPaperScissors.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('rockPaperScissors.js'));
+        .pipe(gulp.dest(destination));
 });
 
 // Default Task

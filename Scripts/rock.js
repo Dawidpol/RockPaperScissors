@@ -1,1 +1,1 @@
-alert('rock');
+alert('rockś');

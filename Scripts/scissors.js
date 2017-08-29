@@ -1,1 +1,1 @@
-alert('paper');
+alert('scissors');
