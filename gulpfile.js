@@ -24,7 +24,7 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
     var destination = '';
 
-    return gulp.src('Scripts/*.js')
+    return gulp.src('Scripts/**/*.js')
         .pipe(concat('rockPaperScissors.js'))
         .pipe(gulp.dest(destination))
         .pipe(rename('rockPaperScissors.min.js'))
