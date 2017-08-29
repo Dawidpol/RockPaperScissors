@@ -1,0 +1,24 @@
+.opponent-weapon-image-wrapper{
+  width: 128px;
+  margin: 0 auto 20px auto;
+}
+
+.weapon-image-wrapper{
+  border-radius: 25px;
+  width: 140px;
+  height: 140px;
+  margin-right: 10px;
+  cursor: pointer;
+  float: left;
+}
+
+.weapon-image-wrapper:hover {
+  background-color: #00ff00;
+}
+
+.weapon-image{
+  margin: 6px 0 0 6px;
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+}

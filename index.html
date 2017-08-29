@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <script src="JQuery/jquery.min.js" ></script>
-  <script src="rockPaperScissors.js" ></script>
-  <link type="text/css" href="rockPaperScissors.css" />
+  <script src="JQuery/jquery.min.js"></script>
+  <script src="rockPaperScissors.js"></script>
+  <link rel="stylesheet" type="text/css" href="rockPaperScissors.css">
 </head>
 
 <body>
-  <div id="rock-selector">
-    Rock
-  </div>
-  <div id="paper-selector">
-    Paper
-  </div>
-  <div id="scissors-selector">
-    Scissors
+  <div class="content">
+    <h1>Let's fight</h1>
+    <h1 id="result-text"></h1>
+    <div class="opponent-weapon-image-wrapper">
+      <img class="opponent-weapon-image" id="opponent-weapon" alt="opponent weapon" src="Img/question_mark.png">
+    </div>
+    <h1>Choose your weapon:</h1>
+    <div class="weapon-image-wrapper">
+      <img class="weapon-image" id="rock-selector" alt="rock" src="Img/rock.png">
+    </div>
+    <div class="weapon-image-wrapper">
+      <img class="weapon-image" id="paper-selector" alt="paper" src="Img/paper.png">
+    </div>
+    <div class="weapon-image-wrapper">
+      <img class="weapon-image" id="scissors-selector" alt="scissors" src="Img/scissors.png">
+    </div>
   </div>
 </body>
+
 </html>

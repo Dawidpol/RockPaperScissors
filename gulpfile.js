@@ -1,9 +1,5 @@
 var gulp = require('gulp');
 
-gulp.task('default', function () {
-    console.log('Hello Gulp!')
-});
-
 // Include Our Plugins
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
@@ -13,7 +9,7 @@ var rename = require('gulp-rename');
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src('StyleSheets/*.scss')
+    return gulp.src('StyleSheets/**/*.scss')
         .pipe(concat('rockPaperScissors.css'))
         .pipe(sass())
         .pipe(rename('rockPaperScissors.css'))
