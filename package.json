@@ -1,0 +1,36 @@
+{
+  "name": "rock_paper_scissors",
+  "version": "0.0.1",
+  "description": "Roc paper scissors game implementation",
+  "main": "rockPaperScissors.js",
+  "scripts": {
+    "test": "compile_all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dawidpol/RockPaperScissors.git"
+  },
+  "keywords": [
+    "rock",
+    "paper",
+    "scissors",
+    "game",
+    "javascript",
+    "js"
+  ],
+  "author": "Dawid Kisielewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dawidpol/RockPaperScissors/issues"
+  },
+  "homepage": "https://github.com/Dawidpol/RockPaperScissors#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5"
+  }
+}
